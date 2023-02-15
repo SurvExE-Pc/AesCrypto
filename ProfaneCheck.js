@@ -9,9 +9,9 @@
           {
             opcode: 'isSafe',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'does [str] contain profane?',
+            text: 'does [text] contain profane?',
             arguments: {
-              str: {
+              text: {
                 type: Scratch.ArgumentType.STRING,
                 defaultValue: 'Hello, World~'
               }
@@ -29,7 +29,7 @@
         }
         return !safe;
       }
-      return checkForProfane(args.str);
+      return checkForProfane(args.text);
   }
   }
   Scratch.extensions.register(new ProfaneCheck());
