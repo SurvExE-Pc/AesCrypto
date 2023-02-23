@@ -55,6 +55,7 @@ encryptAES(args) {
     var plain = Aes.Ctr.decrypt(args.data, args.pwd, args.bytes);
     return plain;
 }
+}
   /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /*  AES implementation in JavaScript                     (c) Chris Veness 2005-2014 / MIT Licence */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -616,7 +617,6 @@ function decryptFile(file) {
         $('#decrypt-file-time').html(((t2 - t1)/1000)+'s'); // display time taken
         $('body').css({'cursor':'default'});
     }
-}
 }
 Scratch.extensions.register(new SurvAes());
 })(Scratch);
