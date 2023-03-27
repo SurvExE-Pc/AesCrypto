@@ -1,6 +1,5 @@
 (function(Scratch) {
   'use strict';
-  require('https://cdn.jsdelivr.net/gh/travist/jsencrypt@master/bin/jsencrypt.min.js');
 class RsaCrypto {
   getInfo() {
     return {
