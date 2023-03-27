@@ -45,7 +45,7 @@ class RsaCrypto {
     };
   }
   SetupRSA() {
-    var AEscript = document.createElement('script');
+    var RSAscript = document.createElement('script');
     RSAscript.src="https://cdn.jsdelivr.net/gh/travist/jsencrypt@master/bin/jsencrypt.min.js";
     RSAscript.crossorigin="anonymous";
     window.document.body.appendChild(RSAscript);
